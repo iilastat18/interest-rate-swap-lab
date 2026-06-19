@@ -1,0 +1,101 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="80" x2="1460" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A101A"/>
+      <stop offset="1" stop-color="#111C2D"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="240" y1="180" x2="1320" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121C2D" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#0B1321" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="335" y1="226" x2="978" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#56D3FF"/>
+      <stop offset="1" stop-color="#79F0C8"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="1030" y1="260" x2="1320" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFDA6B"/>
+      <stop offset="1" stop-color="#FF8C69"/>
+    </linearGradient>
+    <filter id="shadow" x="166" y="132" width="1268" height="650" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="27"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.0196078 0 0 0 0 0.0431373 0 0 0 0.45 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <circle cx="1328" cy="140" r="240" fill="#123454" fill-opacity="0.34"/>
+  <circle cx="1430" cy="720" r="210" fill="#0E5A5D" fill-opacity="0.16"/>
+  <circle cx="210" cy="760" r="180" fill="#20314E" fill-opacity="0.24"/>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="160" width="1160" height="540" rx="30" fill="url(#panel)" stroke="#26364D" stroke-width="1.5"/>
+  </g>
+
+  <rect x="262" y="206" width="176" height="34" rx="17" fill="#142739"/>
+  <text x="290" y="229" fill="#7FD8FF" font-size="18" font-family="SF Pro Display, Helvetica, Arial, sans-serif" letter-spacing="2.8">PUBLIC PROJECT</text>
+
+  <text x="262" y="318" fill="#F4F7FB" font-size="68" font-weight="700" font-family="SF Pro Display, Helvetica, Arial, sans-serif">Interest Rate Swap Lab</text>
+  <text x="262" y="370" fill="#AFC1D8" font-size="24" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Single-curve swap valuation, par-rate construction, and finite-difference hedge design.</text>
+  <text x="262" y="408" fill="#8A9CB4" font-size="20" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Independent public rebuild for portfolio presentation.</text>
+
+  <rect x="262" y="458" width="118" height="38" rx="19" fill="#132638"/>
+  <text x="292" y="483" fill="#D9E8F7" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Java</text>
+  <rect x="392" y="458" width="166" height="38" rx="19" fill="#132638"/>
+  <text x="424" y="483" fill="#D9E8F7" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Swap PV</text>
+  <rect x="570" y="458" width="154" height="38" rx="19" fill="#132638"/>
+  <text x="600" y="483" fill="#D9E8F7" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Par Rate</text>
+  <rect x="736" y="458" width="192" height="38" rx="19" fill="#132638"/>
+  <text x="766" y="483" fill="#D9E8F7" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Hedge Ratios</text>
+
+  <rect x="262" y="550" width="430" height="112" rx="24" fill="#0F1929" stroke="#25364A" stroke-width="1.2"/>
+  <text x="292" y="588" fill="#7F96B2" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Workflow</text>
+  <text x="292" y="625" fill="#F5F8FC" font-size="28" font-weight="600" font-family="SF Pro Display, Helvetica, Arial, sans-serif">Curve → Swap PV → Benchmark Hedges</text>
+  <text x="292" y="654" fill="#95A8BE" font-size="17" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Node bumps, bucketed sensitivities, and least-squares replication.</text>
+
+  <rect x="760" y="220" width="570" height="182" rx="24" fill="#0D1828" stroke="#243448" stroke-width="1.2"/>
+  <text x="792" y="257" fill="#7F96B2" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Yield Curve View</text>
+  <line x1="810" y1="364" x2="1296" y2="364" stroke="#2A3A4F" stroke-width="1"/>
+  <line x1="810" y1="323" x2="1296" y2="323" stroke="#202E41" stroke-width="1"/>
+  <line x1="810" y1="282" x2="1296" y2="282" stroke="#202E41" stroke-width="1"/>
+  <line x1="810" y1="241" x2="1296" y2="241" stroke="#202E41" stroke-width="1"/>
+  <path d="M820 345C865 334 908 323 955 307C1004 291 1043 281 1090 270C1135 259 1188 250 1282 236" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="820" cy="345" r="7" fill="#62D9FC"/>
+  <circle cx="900" cy="325" r="7" fill="#66DEF0"/>
+  <circle cx="980" cy="300" r="7" fill="#6CE4E3"/>
+  <circle cx="1090" cy="270" r="7" fill="#74E9D7"/>
+  <circle cx="1182" cy="252" r="7" fill="#79EFCC"/>
+  <circle cx="1282" cy="236" r="7" fill="#80F4C3"/>
+  <text x="812" y="388" fill="#61748D" font-size="14" font-family="SF Pro Text, Helvetica, Arial, sans-serif">1Y</text>
+  <text x="896" y="388" fill="#61748D" font-size="14" font-family="SF Pro Text, Helvetica, Arial, sans-serif">2Y</text>
+  <text x="975" y="388" fill="#61748D" font-size="14" font-family="SF Pro Text, Helvetica, Arial, sans-serif">3Y</text>
+  <text x="1080" y="388" fill="#61748D" font-size="14" font-family="SF Pro Text, Helvetica, Arial, sans-serif">5Y</text>
+  <text x="1176" y="388" fill="#61748D" font-size="14" font-family="SF Pro Text, Helvetica, Arial, sans-serif">7Y</text>
+  <text x="1272" y="388" fill="#61748D" font-size="14" font-family="SF Pro Text, Helvetica, Arial, sans-serif">10Y</text>
+
+  <rect x="760" y="430" width="278" height="230" rx="24" fill="#0D1828" stroke="#243448" stroke-width="1.2"/>
+  <text x="792" y="468" fill="#7F96B2" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Benchmark Grid</text>
+  <text x="792" y="509" fill="#F5F8FC" font-size="24" font-weight="600" font-family="SF Pro Display, Helvetica, Arial, sans-serif">Par Swaps</text>
+  <text x="792" y="541" fill="#94A7BE" font-size="16" font-family="SF Pro Text, Helvetica, Arial, sans-serif">1Y   2Y   3Y   5Y   7Y   10Y</text>
+  <rect x="792" y="566" width="214" height="18" rx="9" fill="#15283B"/>
+  <rect x="792" y="566" width="34" height="18" rx="9" fill="#486786"/>
+  <rect x="832" y="566" width="30" height="18" rx="9" fill="#55799A"/>
+  <rect x="868" y="566" width="36" height="18" rx="9" fill="#5D88A9"/>
+  <rect x="910" y="566" width="62" height="18" rx="9" fill="#6EADB8"/>
+  <rect x="978" y="566" width="58" height="18" rx="9" fill="#80D39C"/>
+  <text x="792" y="617" fill="#F5F8FC" font-size="24" font-weight="600" font-family="SF Pro Display, Helvetica, Arial, sans-serif">Hedge Mix</text>
+  <text x="792" y="649" fill="#94A7BE" font-size="16" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Least-squares solution on curve buckets</text>
+
+  <rect x="1060" y="430" width="270" height="230" rx="24" fill="#0D1828" stroke="#243448" stroke-width="1.2"/>
+  <text x="1092" y="468" fill="#7F96B2" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Diagnostics</text>
+  <text x="1092" y="525" fill="#F6F8FB" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Target PV</text>
+  <text x="1092" y="562" fill="#FFFFFF" font-size="38" font-weight="700" font-family="SF Pro Display, Helvetica, Arial, sans-serif">-21,192.95</text>
+  <text x="1092" y="607" fill="#F6F8FB" font-size="18" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Residual RMS</text>
+  <text x="1092" y="645" fill="url(#accent2)" font-size="34" font-weight="700" font-family="SF Pro Display, Helvetica, Arial, sans-serif">0.000000</text>
+
+  <text x="220" y="794" fill="#7B8CA4" font-size="20" font-family="SF Pro Text, Helvetica, Arial, sans-serif">Portfolio-ready fixed-income analytics demo • GitHub presentation cover</text>
+</svg>
