@@ -57,6 +57,17 @@ mvn test
 mvn exec:java
 ```
 
+## Preview
+
+<p align="center">
+  <img src="assets/curve-view.svg" width="49%" alt="Interpolated zero curves" />
+  <img src="assets/par-rate-grid.svg" width="49%" alt="Benchmark par rate grid" />
+</p>
+<p align="center">
+  <img src="assets/hedge-weights.svg" width="49%" alt="Illustrative hedge weights" />
+  <img src="assets/risk-residuals.svg" width="49%" alt="Residual bucketed curve risk" />
+</p>
+
 ## Sample Workflow
 
 The demo program:
@@ -102,6 +113,12 @@ RMS residual: 0.000000
 interest-rate-swap-lab/
 ├── pom.xml
 ├── README.md
+├── assets/
+│   ├── cover.svg
+│   ├── curve-view.svg
+│   ├── hedge-weights.svg
+│   ├── par-rate-grid.svg
+│   └── risk-residuals.svg
 └── src/
     ├── main/java/com/lingxin/interestrates/
     │   ├── DemoMain.java
@@ -120,3 +137,4 @@ interest-rate-swap-lab/
 - This is an independent public rebuild, not a classroom repository mirror.
 - The project intentionally keeps the market model simple so the pricing and hedging logic stay transparent.
 - The hedge is constructed with finite differences on curve nodes, which makes the mechanics visible and easy to extend.
+- The README charts are portfolio-facing visual summaries of the demo scenario and benchmark grid.
