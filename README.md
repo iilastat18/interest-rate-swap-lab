@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Interest Rate Swap Lab</h1>
   <p><strong>A public-facing Java project for swap valuation, par-rate calculation, and finite-difference hedge construction on a single discount curve.</strong></p>
-  <p>Built as an independent portfolio project inspired by interest-rate coursework, but rewritten with new structure, naming, and documentation for public presentation.</p>
+  <p>Built as a compact portfolio project with clear structure, documentation, and interview-friendly outputs.</p>
 </div>
 
 <p align="center">
@@ -134,7 +134,6 @@ interest-rate-swap-lab/
 
 ## Notes
 
-- This is an independent public rebuild, not a classroom repository mirror.
 - The project intentionally keeps the market model simple so the pricing and hedging logic stay transparent.
 - The hedge is constructed with finite differences on curve nodes, which makes the mechanics visible and easy to extend.
 - The README charts are portfolio-facing visual summaries of the demo scenario and benchmark grid.
