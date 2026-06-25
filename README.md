@@ -39,34 +39,34 @@ The goal is to show pricing intuition, curve mechanics, and implementation quali
 
 On the single-curve setup used in the lab, discount factors are constructed from zero rates via
 
-$$
+```math
 P(0,T) = e^{-z(T)T}.
-$$
+```
 
 Forward rates between two payment dates are then
 
-$$
+```math
 L(T_{i-1}, T_i) = \frac{1}{\delta_i}\left(\frac{P(0,T_{i-1})}{P(0,T_i)} - 1\right),
-$$
+```
 
-where \(\delta_i = T_i - T_{i-1}\).
+where $\delta_i = T_i - T_{i-1}$.
 
 The fixed-for-floating swap present value in the implementation is
 
-$$
+```math
 \text{PV}_{\text{swap}}
 =
 N \sum_{i=1}^n (L(T_{i-1},T_i)-K)\,\delta_i\,P(0,T_i).
-$$
+```
 
 The par swap rate is the fixed rate that makes this value zero:
 
-$$
+```math
 K^\star
 =
 \frac{\sum_{i=1}^n \left(P(0,T_{i-1})-P(0,T_i)\right)}
 {\sum_{i=1}^n \delta_i P(0,T_i)}.
-$$
+```
 
 ## What It Shows
 
